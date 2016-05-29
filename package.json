@@ -27,27 +27,29 @@
   ],
   "license": "GPL-3.0",
   "dependencies": {
-    "@angular/common":  "*",
-    "@angular/compiler":  "*",
-    "@angular/core":  "*",
-    "@angular/http":  "*",
-    "@angular/platform-browser":  "*",
-    "@angular/platform-browser-dynamic":  "*",
-    "@angular/router":  "*",
-    "@angular/upgrade":  "*",
-    "systemjs": "*",
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "@angular/upgrade": "*",
+    "angular2-in-memory-web-api": "*",
+    "bootstrap": "*",
     "core-js": "*",
     "reflect-metadata": "*",
     "rxjs": "*",
-    "zone.js": "*",
-    "angular2-in-memory-web-api": "*",
-    "bootstrap": "*"
+    "simple-peer": "*",
+    "systemjs": "*",
+    "typescript-require": "^0.2.9-1",
+    "zone.js": "*"
   },
   "devDependencies": {
     "concurrently": "*",
     "lite-server": "*",
     "typescript": "*",
-    "typings":"*"
+    "typings": "*"
   },
   "bugs": {
     "url": "https://github.com/Whiteboard-webRTC/whiteboard/issues"
