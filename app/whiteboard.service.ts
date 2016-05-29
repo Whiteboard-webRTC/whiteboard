@@ -10,7 +10,7 @@ export class WhiteboardService {
     }
     
     getPeer(args) {
-        return new SimplePeer(args);
+        return new SimplePeer(args); 
     }
 
 }
