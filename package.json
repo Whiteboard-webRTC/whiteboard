@@ -14,7 +14,11 @@
     "whiteboard",
     "webRTC"
   ],
-  "author": "Matias Pierobon <matias.pierobonm@gmail.com> (http://matias-pierobon.github.io)",
+  "author": [
+    "Matias Pierobon <matias.pierobonm@gmail.com> (http://matias-pierobon.github.io)",
+    "Federico Marcos <marcosfede@gmail.com>",
+    "Luciano Pérez Cerra <luchopcerra@gmail.com>"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/Whiteboard-webRTC/whiteboard/issues"
