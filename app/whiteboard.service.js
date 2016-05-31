@@ -9,12 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-const SimplePeer = require('simple-peer');
 let WhiteboardService = class WhiteboardService {
     constructor() {
     }
     getPeer(args) {
-        return new SimplePeer(args);
     }
 };
 WhiteboardService = __decorate([

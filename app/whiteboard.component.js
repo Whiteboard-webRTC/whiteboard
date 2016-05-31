@@ -13,18 +13,6 @@ const whiteboard_service_1 = require('./whiteboard.service');
 let WhiteboardComponent = class WhiteboardComponent {
     constructor(whiteboardService) {
         this.whiteboardService = whiteboardService;
-        this.peer = whiteboardService.getPeer({ initiator: location.hash == "#ini" });
-        this.messages = new Array();
-        this.peer.on('signal', (data) => {
-            this.myID = JSON.stringify(data);
-        });
-        this.peer.on('data', (data) => this.messages.push(data));
-    }
-    connect() {
-        this.peer.signal(JSON.parse(this.yourID));
-    }
-    send(msg) {
-        this.peer.send(msg);
     }
     ngOnInit() { }
 };
@@ -32,16 +20,7 @@ WhiteboardComponent = __decorate([
     core_1.Component({
         selector: 'whiteboard',
         template: `
-        <form>
-            <textarea [(ngModel)]="myID" rows="15"></textarea> <br/>
-            <textarea [(ngModel)]="yourID" rows="15"></textarea> <br/>
-            <button (click)="connect()">connect</button><br/><br/>
-            
-            <input type="text" [(ngModel)]="msg" /><button (click)="send(msg)">send</button><br/>
-            <ul>
-                <li *ngFor="let message of messages">{{ message }}</li>
-            </ul>
-            
+
     `,
         //directives: [ToolbarComponent],
         providers: [whiteboard_service_1.WhiteboardService]

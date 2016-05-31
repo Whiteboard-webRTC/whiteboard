@@ -38,6 +38,7 @@
     "angular2-in-memory-web-api": "*",
     "bootstrap": "*",
     "core-js": "*",
+    "materialize-css": "^0.97.6",
     "reflect-metadata": "*",
     "rxjs": "*",
     "simple-peer": "*",
