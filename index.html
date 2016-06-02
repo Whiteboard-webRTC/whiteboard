@@ -7,8 +7,6 @@
 
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
 
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
@@ -21,13 +19,16 @@
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
+    
+    <style>
+      html, body{
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <!-- 3. Display the application -->
   <body>
     <whiteboard>Loading...</whiteboard>
-
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
   </body>
 </html>

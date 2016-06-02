@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
+const toolbar_1 = require('@angular2-material/toolbar');
+const button_1 = require('@angular2-material/button');
 let ToolbarComponent = class ToolbarComponent {
     constructor() {
     }
@@ -19,18 +21,25 @@ let ToolbarComponent = class ToolbarComponent {
 };
 ToolbarComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: 'toolbar',
         template: `
-        <button (click)="onEdit()">Edit</button>
-        <button>Functions</button>
-        <button>Code</button>
-        <button>Draw</button>
+    <md-toolbar>
+        <span>Whiteboard</span> 
+        <!-- This fills the remaining space of the current row -->
+        <span class="sep"></span>
+        
+        <span>
+            <button md-raised-button color="primary">Share</button>
+        </span>
+    </md-toolbar>
     `,
         styles: [
-            `button {
-            background-color: #ff0;
+            `.sep {
+            flex: 1 1 auto;
         }`
-        ]
+        ],
+        directives: [toolbar_1.MD_TOOLBAR_DIRECTIVES, button_1.MD_BUTTON_DIRECTIVES]
     }), 
     __metadata('design:paramtypes', [])
 ], ToolbarComponent);

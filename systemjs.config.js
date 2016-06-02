@@ -7,6 +7,7 @@
   var map = {
     'app':                        'app', // 'dist',
     '@angular':                   'node_modules/@angular',
+    '@angular2-material':         'node_modules/@angular2-material',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs':                       'node_modules/rxjs',
     'simple-peer':                'node_modules/simple-peer'
@@ -33,6 +34,18 @@
   ngPackageNames.forEach(function(pkgName) {
     packages['@angular/'+pkgName] = { main: pkgName + '.umd.js', defaultExtension: 'js' };
   });
+  var materialPkgs = [
+    'core',
+    'button',
+    'sidenav',
+    'tab',
+    'toolbar'
+  ];
+
+  materialPkgs.forEach((pkg) => {
+    packages[`@angular2-material/${pkg}`] = {main: `${pkg}.js`};
+  });
+  
   var config = {
     map: map,
     packages: packages

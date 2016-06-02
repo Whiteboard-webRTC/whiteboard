@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
+const toolbar_component_1 = require('./toolbar/toolbar.component');
 const whiteboard_service_1 = require('./whiteboard.service');
 let WhiteboardComponent = class WhiteboardComponent {
     constructor(whiteboardService) {
@@ -18,11 +19,10 @@ let WhiteboardComponent = class WhiteboardComponent {
 };
 WhiteboardComponent = __decorate([
     core_1.Component({
+        moduleId: module.id,
         selector: 'whiteboard',
-        template: `
-
-    `,
-        //directives: [ToolbarComponent],
+        templateUrl: 'whiteboard.component.html',
+        directives: [toolbar_component_1.ToolbarComponent],
         providers: [whiteboard_service_1.WhiteboardService]
     }), 
     __metadata('design:paramtypes', [whiteboard_service_1.WhiteboardService])
